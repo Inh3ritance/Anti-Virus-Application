@@ -33,7 +33,8 @@
             this.filePathTextbox = new System.Windows.Forms.TextBox();
             this.MD5Textbox = new System.Windows.Forms.TextBox();
             this.uploadButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.File_label = new System.Windows.Forms.Label();
+            this.Status = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_1
@@ -72,7 +73,6 @@
             this.MD5Textbox.Name = "MD5Textbox";
             this.MD5Textbox.Size = new System.Drawing.Size(201, 26);
             this.MD5Textbox.TabIndex = 3;
-            this.MD5Textbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // uploadButton
             // 
@@ -84,16 +84,25 @@
             this.uploadButton.Text = "Upload File(s)";
             this.uploadButton.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // File_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Status";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.File_label.AutoSize = true;
+            this.File_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.File_label.Location = new System.Drawing.Point(12, 30);
+            this.File_label.Name = "File_label";
+            this.File_label.Size = new System.Drawing.Size(52, 20);
+            this.File_label.TabIndex = 5;
+            this.File_label.Text = "File(s)";
+            // 
+            // Status
+            // 
+            this.Status.AutoSize = true;
+            this.Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Status.Location = new System.Drawing.Point(70, 99);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(56, 20);
+            this.Status.TabIndex = 6;
+            this.Status.Text = "Status";
             // 
             // Form
             // 
@@ -101,12 +110,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(292, 151);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Status);
+            this.Controls.Add(this.File_label);
             this.Controls.Add(this.uploadButton);
             this.Controls.Add(this.MD5Textbox);
             this.Controls.Add(this.filePathTextbox);
             this.Controls.Add(this.label_2);
-            this.Controls.Add(this.label_1);
             this.Name = "Form";
             this.Text = "AntiVirus";
             this.Load += new System.EventHandler(this.Form_Load);
@@ -116,13 +125,13 @@
         }
 
         #endregion
-
         private System.Windows.Forms.Label label_1;
         private System.Windows.Forms.Label label_2;
         private System.Windows.Forms.TextBox filePathTextbox;
         private System.Windows.Forms.TextBox MD5Textbox;
         private System.Windows.Forms.Button uploadButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label File_label;
+        private System.Windows.Forms.Label Status;
     }
 }
 
