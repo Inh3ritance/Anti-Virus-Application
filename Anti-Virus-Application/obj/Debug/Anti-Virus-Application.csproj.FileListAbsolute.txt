@@ -2,9 +2,9 @@ C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\b
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\bin\Debug\Anti-Virus-Application.exe
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\bin\Debug\Anti-Virus-Application.pdb
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti-Virus-Application.csprojAssemblyReference.cache
-C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti_Virus_Application.Form.resources
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti_Virus_Application.Properties.Resources.resources
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti-Virus-Application.csproj.GenerateResource.cache
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti-Virus-Application.csproj.CoreCompileInputs.cache
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti-Virus-Application.exe
 C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti-Virus-Application.pdb
+C:\Users\marcos\Documents\GitHub\Anti-Virus-Application\Anti-Virus-Application\obj\Debug\Anti_Virus_Application.scanButton.resources

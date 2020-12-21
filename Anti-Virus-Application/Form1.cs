@@ -11,8 +11,8 @@ using System.Windows.Forms;
 using System.IO;
 
 namespace Anti_Virus_Application {
-    public partial class Form : System.Windows.Forms.Form {
-        public Form() {
+    public partial class scanButton : System.Windows.Forms.Form {
+        public scanButton() {
             InitializeComponent();
         }
         private void Form_Load(object sender, EventArgs e) { }
@@ -20,6 +20,7 @@ namespace Anti_Virus_Application {
         private string GetMD5FromFile(string filepath){
             using (var md5 = MD5.Create()) {
                 using (var stream = File.OpenRead(filepath)) {
+                    filePathTextbox.Text = filepath;
                     return BitConverter.ToString(md5.ComputeHash(stream)).Replace("-",String.Empty).ToLower();
                 }
             }
@@ -33,13 +34,16 @@ namespace Anti_Virus_Application {
             }
         }
 
-        private void scanButton_Click(object sender, EventArgs e) {
+        private void scan_Click(object sender, EventArgs e) {
             var md5sig = File.ReadAllLines("Database.txt");
             if (md5sig.Contains(MD5Textbox.Text)) {
                 Status.Text = "infected File";
+                Status.ForeColor = Color.Red;
             } else {
                 Status.Text = "Clear";
+                Status.ForeColor = Color.Green;
             }
         }
+
     }
 }
