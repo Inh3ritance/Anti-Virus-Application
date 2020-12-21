@@ -28,7 +28,7 @@ namespace Anti_Virus_Application {
 
         private void uploadButton_Click(object sender, EventArgs e) {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Textfiles | *.txt";
+            ofd.Filter = "All Files|*.*";
             if (ofd.ShowDialog() == DialogResult.OK) {
                 MD5Textbox.Text = GetMD5FromFile(ofd.FileName);
             }
